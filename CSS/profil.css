@@ -24,6 +24,7 @@
     align-items: start;
     height: auto;
     gap: 50px;
+    border: solid 3px gray;
   }
   
   /* Dark rejim uchun */
@@ -44,7 +45,7 @@
     box-shadow: 5px 5px 8px black;
   }
   .user_abaut b{
-    margin-left: 200px;
+   margin-left: 200px;
     color: var(--text-color);
     text-align: start;
     background-color: var(--bg-color1 );
@@ -154,25 +155,69 @@
   }
   
   .books_table th {
-  
   }
-  
-  .books_table tr:hover {
+    td:hover {
+    opacity: 0.7;
+  }  
+  th:hover {
+    opacity: 0.7;}
 
-  }
-  
-  .status {
-  
-  }
-  
-  .status.active {
-   
-  }
-  
-  .status.expired {
-
-  }
-/* .title_table th {
-   margin: 0 10px;
+  /* Responsive jadval - 900px dan past ekranlar uchun */
+  @media (max-width: 900px) {
+    .purchased_books {
+      padding: 20px;
+      overflow-x: auto; /* Gorizontal scroll */
+    }
     
-} */
+    .books_table {
+      min-width: 600px; /* Jadvalning minimal kengligi */
+      width: auto;
+    }
+    
+    .books_table th, 
+    .books_table td {
+      white-space: nowrap; /* Matn qatorlarga bo'linmasin */
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+    
+    /* Scroll bar styling */
+    .purchased_books::-webkit-scrollbar {
+      height: 8px;
+    }
+    
+    .purchased_books::-webkit-scrollbar-track {
+      background: var(--bg-color1);
+      border-radius: 4px;
+    }
+    
+    .purchased_books::-webkit-scrollbar-thumb {
+      background: #666;
+      border-radius: 4px;
+    }
+    
+    .purchased_books::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+    .profil_item {
+        flex-direction: column;
+    }
+    .profil_button {
+        margin-top: 20px;
+        gap: 10px;
+    }
+    .user_abaut b {
+        text-align: center;
+    }
+    .user_abaut {
+       margin-left: -200px;
+       margin-top: 100px;
+    }
+    .user_img {
+        top: -20%;
+        left: 50%;            
+        transform: translateX(-50%);
+      }
+
+    
+  }

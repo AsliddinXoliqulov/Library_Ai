@@ -44,12 +44,12 @@
             <i class="fa-solid fa-book fa-2xl"></i>
             <h2>MyBooK</h2>
           </div>
-      <li class="links_bar""><i class="fa-solid fa-book-open"></i><span><a href="./books.html">Adabiyotlar</a></span></li>
-      <li class="links_bar""><i class="fa-solid fa-scroll"></i><span><a href="./asarlar.html">Asarlar</a></span></li>
-      <li class="links_bar""><i class="fa-solid fa-feather-pointed"></i><span><a href="./maqolalr.html">Maqolalar</a></span></li>
-      <li class="links_bar""><i class="fa-solid fa-star"></i><span><a href="./ertaklar.html">Ertaklar</a></span></li>
-      <li class="links_bar""><i class="fa-solid fa-heart"></i><span><a href="./saralanganlar.html">Saralangan</a></span></li>
-      <li class="links_bar""><i class="fa-solid fa-user"></i><span><a href="./prodil.html">Profil</a></span></li>
+      <li class="links_bar"><i class="fa-solid fa-book-open"></i><span><a href="./books.html">Adabiyotlar</a></span></li>
+      <li class="links_bar"><i class="fa-solid fa-scroll"></i><span><a href="./asarlar.html">Asarlar</a></span></li>
+      <li class="links_bar"><i class="fa-solid fa-feather-pointed"></i><span><a href="./maqolalr.html">Maqolalar</a></span></li>
+      <li class="links_bar"><i class="fa-solid fa-star"></i><span><a href="./ertaklar.html">Ertaklar</a></span></li>
+      <li class="links_bar"><i class="fa-solid fa-heart"></i><span><a href="./saralanganlar.html">Saralangan</a></span></li>
+      <li class="links_bar"><i class="fa-solid fa-user"></i><span><a href="./prodil.html">Profil</a></span></li>
     </ul>
   </aside>
 
@@ -58,16 +58,19 @@
         <h1 style="margin-left: 20px;">My Profil</h1>
     <section class="no_Data" >
       <div class="profil_item">
-        <div class="user_abaut">
-          <img class="user_img" src="../IMG/userimg.png" alt="">
-          <b class="user_name">Usernam: <span>John Carter</span></b>
-          <b class="uaer_email">Email: <span>johncarter@gmail.com</span></b>
-          <b class="user_phone">Tell: <span>+998 90 123 45 67</span></b>
+        <!-- <span style="width: 150px;"></span> -->
+        <img class="user_img" src="../IMG/userimg.png" alt="">
+        <div>
+          <div class="user_abaut">
+            <b class="user_name">Usernam: <span></span></b>
+            <b class="user_email">Email: <span></span></b>
+            <b class="user_phone">Tell: <span></span></b>
+          </div>
         </div>
         <div class="profil_button">
-          <button>Edit Profil</button>
-          <button>Language</button>
-          <button>Log Out</button>
+          <button id="editProfilBtn">Edit Profil</button>
+          <button id="languageBtn">Language</button>
+          <button id="logoutBtn">Log Out</button>
         </div>
       </div>
 
@@ -259,6 +262,7 @@
       <p>© 2025 MyBooK AI. Barcha huquqlar himoyalangan.</p>
     </div>
   </footer>
+
 
   <script src="../JS/books.js"></script>
   <script src="../JS/profil.js"></script>

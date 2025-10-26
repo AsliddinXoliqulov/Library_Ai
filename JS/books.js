@@ -62,7 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="card_title">
           <h4>${book.title.length > 20 ? book.title.slice(0, 20) + '…' : book.title}</h4>
           <p>${book.author.length > 15 ? book.author.slice(0, 15) + '…' : book.author}</p>
-          <button>Read now</button>
+          <button><a href="./book_info.html">Read now</a></button>
+
+
         </div>
         <i class="fa-solid fa-heart fa-hearts"></i>
       `;

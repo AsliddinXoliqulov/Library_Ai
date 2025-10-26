@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
   }
+  a {
+    text-decoration: none; /* pastki chiziqni o'chiradi */
+    color: inherit; /* matn rangini ota element rangiga moslaydi */
+  }
   
   /* 🔹 RANG O‘ZGARUVCHILAR (light mode) */
   :root {

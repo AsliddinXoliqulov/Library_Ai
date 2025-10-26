@@ -3,21 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="../CSS/books.css">
+  <link rel="stylesheet" href="../CSS/book_info.css">
+  
   <title>MyBooK - Books</title>
 </head>
 <body>
-
-  <!-- 1. Loader -->
+  <!-- Loader -->
   <div id="loading-screen">
     <div class="loader-wrapper">
-      <span style="font-size: 40px;" class="loader-letter"><i class="fa-solid fa-feather-pointed"></i></span>
+      <span class="loader-letter">o</span>
+      <span class="loader-letter">k</span> 
       <div class="loader"></div>
     </div>
   </div>
 
-  <!-- 2. Navbar -->
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">
       <i class="fa-solid fa-book fa-2xl"></i>
@@ -28,10 +34,10 @@
     </div>
   </nav>
 
-  <!-- 3. Sidebar -->
+  <!-- Sidebar -->
   <aside class="sidebar collapsed">
     <ul>
-      <div style="display: none;" class="logo2">
+      <div class="logo2" style="display: none;">
         <i class="fa-solid fa-book fa-2xl"></i>
         <h2>MyBooK</h2>
       </div>
@@ -44,20 +50,33 @@
     </ul>
   </aside>
 
-  <!-- 4. Main Content -->
+  <!-- Main Content -->
   <main class="books-main">
-    <div class="search_imput">
-      <h1>Maqolalar</h1>
-      <input type="text" placeholder="Search books..." id="book-search">
-    </div>
+    <!-- <h1 style="margin-left: 20px;">My Profil</h1> -->
 
-    <div class="books-grid" id="books-grid">
-      <!-- Kitoblar grid ichida JS orqali dynamically yuklanadi -->
-    </div>
+    <!-- <div class="no_Data"> -->
+        <div class="profil_item">
+            <img src="../IMG/garry.png" alt="Book Cover" class="user_img">
+            <div class="title_item">
+                <div class="user_abaut">
+                    <b>Title: The Great Adventure</b>
+                    <b>Author: John Doe</b>
+                    <b>Genre: Fiction</b>
+                    <b>Published: 2023</b>
+                    <!-- <b>Language: English</b> -->
+                  </div>
+                  <div style="margin-top: 20px;" class="profil_button">
+                    <button  id="buyBtn">12.4 $ <i class="fa-solid fa-download"></i></button>
+                    <button id="wishlistBtn"><i class="fa-solid fa-heart"></i></button>
+                    <button id="readSampleBtn">Language</button>
+                  </div>
+            </div>
+        </div>
+    <!-- </div> -->
   </main>
 
-  <!-- 5. Footer -->
-  <footer style="padding-left: 55px;" class="footer">
+  <!-- Footer -->
+  <footer class="footer" style="padding-left: 55px;">
     <div class="footer-content">
       <div class="footer-logo">
         <i class="fa-solid fa-book"></i>
@@ -75,6 +94,8 @@
     </div>
   </footer>
 
+  <!-- JS -->
   <script src="../JS/books.js"></script>
+  <script src="../JS/profil.js"></script>
 </body>
 </html>
