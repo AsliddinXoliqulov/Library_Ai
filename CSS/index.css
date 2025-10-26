@@ -1,0 +1,408 @@
+/* 🔹 RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 🔹 RANG O‘ZGARUVCHILAR (light mode) */
+  :root {
+    --bg-color: #d5d5d5;
+    --bg-color1: #ffffff8b;
+    --text-color: #181818;
+    --navbar-bg: #fff;
+    --navbar-text: #181818;
+  }
+  
+  /* 🔹 DARK MODE */
+  .dark-mode {
+    --bg-color: #121212;
+    --bg-color1: #0000008b;
+    --text-color: #f5f5f5;
+    --navbar-bg: #181818;
+    --navbar-text: #f5f5f5;
+  }
+  button {
+    cursor: pointer;
+  }
+  
+  /* 🔹 BODY */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--navbar-bg);
+    color: var(--text-color);
+    transition: background 0.4s ease, color 0.4s ease;
+    padding-top: 100px;
+  }
+  
+  /* ================= NAVBAR ================= */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 6%;
+    background-color: var(--bg-color);
+    color: var(--navbar-text);
+    transition: background 0.4s, color 0.4s;
+    z-index: 1000;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-color);
+  }
+  
+  .fa-solid {
+    color: var(--text-color);
+    transition: color 0.3s;
+  }
+  
+  .theme-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: transform 0.6s ease, color 0.3s;
+  }
+  .theme-icon.rotate {
+    transform: rotate(360deg);
+  }
+  
+  /* ================= LOADER ================= */
+/* #loading-screen {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at center, #0f0f1b 0%, #000 100%);
+    z-index: 9999;
+    transition: opacity 0.7s ease;
+  }
+  
+  .loader-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: white;
+    border-radius: 50%;
+    background-color: transparent;
+    user-select: none;
+  }
+  
+  .loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    animation: loader-rotate 2s linear infinite;
+    z-index: 0;
+  }
+  
+  @keyframes loader-rotate {
+    0% {
+      transform: rotate(90deg);
+      box-shadow:
+        0 10px 20px 0 #fff inset,
+        0 20px 30px 0 #ad5fff inset,
+        0 60px 60px 0 #471eec inset;
+    }
+    50% {
+      transform: rotate(270deg);
+      box-shadow:
+        0 10px 20px 0 #fff inset,
+        0 20px 10px 0 #d60a47 inset,
+        0 40px 60px 0 #311e80 inset;
+    }
+    100% {
+      transform: rotate(450deg);
+      box-shadow:
+        0 10px 20px 0 #fff inset,
+        0 20px 30px 0 #ad5fff inset,
+        0 60px 60px 0 #471eec inset;
+    }
+  }
+  
+  .loader-letter {
+    display: inline-block;
+    opacity: 0.4;
+    transform: translateY(0);
+    animation: loader-letter-anim 2s infinite;
+    z-index: 1;
+  }
+  
+  .loader-letter:nth-child(1) { animation-delay: 0s; }
+  .loader-letter:nth-child(2) { animation-delay: 0.1s; }
+  .loader-letter:nth-child(3) { animation-delay: 0.2s; }
+  .loader-letter:nth-child(4) { animation-delay: 0.3s; }
+  .loader-letter:nth-child(5) { animation-delay: 0.4s; }
+  .loader-letter:nth-child(6) { animation-delay: 0.5s; }
+  .loader-letter:nth-child(7) { animation-delay: 0.6s; }
+  .loader-letter:nth-child(8) { animation-delay: 0.7s; }
+  .loader-letter:nth-child(9) { animation-delay: 0.8s; }
+  .loader-letter:nth-child(10) { animation-delay: 0.9s; }
+  
+  @keyframes loader-letter-anim {
+    0%, 100% {
+      opacity: 0.4;
+      transform: translateY(0);
+    }
+    20% {
+      opacity: 1;
+      transform: scale(1.15);
+    }
+    40% {
+      opacity: 0.7;
+      transform: translateY(0);
+    }
+  }
+  
+  #loading-screen.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+   */
+
+/* 🔄 Sahifa chiqish animatsiyasi */
+/* .page-exit {
+  animation: pageFadeOut 1s ease forwards;
+}
+
+@keyframes pageFadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.08);
+    filter: blur(4px);
+  }
+}
+ */
+
+  
+  /* ================= CONTAINER ================= */
+  .container {
+    height: calc(70vh - 10vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: slideDownFade 1s ease forwards;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .container p {
+    font-size: 1.2rem;
+    opacity: 0;
+    animation: slideUpFade 1.2s ease forwards;
+    animation-delay: 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .home_write {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  /* 🔹 Tugma */
+  button {
+    font-size: 14px;
+    padding: 10px 20px;
+    background-color: var(--navbar-text);
+    color: var(--bg-color);
+    border-radius: 20px;
+    border: 2px solid var(--navbar-text);
+    box-shadow: 6px 5px 8px var(--navbar-text);
+    cursor: pointer;
+    width: 90%;
+    margin: auto;
+    transition: all 0.3s;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  button:active {
+    box-shadow: 5px 3px 8px var(--navbar-text);
+    opacity: 0.7;
+  }
+  
+  /* ================= BOOK SECTION ================= */
+  .book-section {
+    width: 90%;
+    margin: 40px auto 0;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease forwards;
+    animation-delay: 2s;
+  }
+  
+  .mySwiper {
+    width: 100%;
+    padding: 30px 0;
+  }
+  
+  .card {
+    background: var(--navbar-bg);
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.4s, box-shadow 0.4s;
+    height: 400px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: ridge 5px var(--navbar-text);
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 18px var(--text-color);
+  }
+  
+  .Ommabob {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* ================= FOOTER ================= */
+  .footer {
+    background-color: var(--navbar-bg);
+    color: var(--text-color);
+    padding: 40px 0 0;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background 0.4s, color 0.4s;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  
+  .footer-socials {
+    display: flex;
+    gap: 50px;
+    font-size: 1.8rem;
+  }
+  
+  .footer-socials i {
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .footer-socials i:hover {
+    color: #4f46e5;
+    transform: scale(1.2);
+  }
+  
+  .footer-bottom {
+    margin-top: 25px;
+    font-size: 0.85rem;
+    opacity: 0.7;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    background-color: var(--bg-color);
+    width: 100%;
+  }
+  
+  .dark-mode .footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* ================= ANIMATSIYALAR ================= */
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(60px);
+      filter: blur(5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+  
+  @keyframes slideDownFade {
+    0% {
+      opacity: 0;
+      transform: translateY(-40px);
+      filter: blur(6px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+  
+  @keyframes slideUpFade {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+      filter: blur(6px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+  
+  /* ================= RESPONSIVE ================= */
+  @media (max-width: 1200px) {
+    .card { height: 300px; }
+  }
+  
+  @media (max-width: 950px) {
+    .card { height: 200px; }
+    h1 { font-size: 30px; }
+    .container p { font-size: 15px; }
+  }
+  
+  @media (max-width: 600px) {
+    .container h1 { font-size: 20px; }
+    .container p { font-size: 10px; }
+    .container { padding: 0 5%; }
+  }
+  

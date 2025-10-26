@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/books.css">
+  <link rel="stylesheet" href="../CSS/profil.css">
+  <title>MyBooK - Books</title>
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loading-screen">
+    <div class="loader-wrapper">
+      <!-- <span class="loader-letter">M</span>
+      <span class="loader-letter">y</span>
+      <span class="loader-letter">B</span>
+      <span class="loader-letter">o</span>
+      <span class="loader-letter">o</span>
+      <span class="loader-letter">k</span> -->
+      <div class="loader"></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+        <!-- <div>.</div> -->
+      <i class="fa-solid fa-book fa-2xl"></i>
+      <h2><a href="/">MyBooK</a></h2>
+      <!-- <Button id="saidbar_menu"><i class="fa-solid fa-bars"></i></Button> -->
+    </div>
+    <div class="navbar-right">
+      <i id="toggle-btn" class="fa-solid fa-sun theme-icon"></i>
+      <!-- <i id="menu-btn" class="fa-solid fa-bars menu-icon"></i> -->
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+  <aside class="sidebar collapsed">
+    <ul>
+        <div style="display: none;" class="logo2">
+            <i class="fa-solid fa-book fa-2xl"></i>
+            <h2>MyBooK</h2>
+          </div>
+      <li class="links_bar""><i class="fa-solid fa-book-open"></i><span><a href="./books.html">Adabiyotlar</a></span></li>
+      <li class="links_bar""><i class="fa-solid fa-scroll"></i><span><a href="./asarlar.html">Asarlar</a></span></li>
+      <li class="links_bar""><i class="fa-solid fa-feather-pointed"></i><span><a href="./maqolalr.html">Maqolalar</a></span></li>
+      <li class="links_bar""><i class="fa-solid fa-star"></i><span><a href="./ertaklar.html">Ertaklar</a></span></li>
+      <li class="links_bar""><i class="fa-solid fa-heart"></i><span><a href="./saralanganlar.html">Saralangan</a></span></li>
+      <li class="links_bar""><i class="fa-solid fa-user"></i><span><a href="./prodil.html">Profil</a></span></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="books-main">
+        <h1 style="margin-left: 20px;">My Profil</h1>
+    <section class="no_Data" >
+      <div class="profil_item">
+        <div class="user_abaut">
+          <img class="user_img" src="../IMG/userimg.png" alt="">
+          <b class="user_name">Usernam: <span>John Carter</span></b>
+          <b class="uaer_email">Email: <span>johncarter@gmail.com</span></b>
+          <b class="user_phone">Tell: <span>+998 90 123 45 67</span></b>
+        </div>
+        <div class="profil_button">
+          <button>Edit Profil</button>
+          <button>Language</button>
+          <button>Log Out</button>
+        </div>
+      </div>
+
+      
+        <section class="purchased_books">
+          <h2>Sotib olingan kitoblar</h2>
+          <table class="books_table">
+            <thead>
+              <tr >
+                <th style="text-align: center;">#</th>
+                <th style="text-align: center;">Kitob nomi</th>
+                <th style="text-align: center;">Muallif</th>
+                <th style="text-align: center;">Sana</th>
+                <th style="text-align: center;">Ochish</th>
+              </tr>
+            </thead>
+            <tbody id="booksBody">
+              <tr>
+                <td>1</td>
+                <td>Alkimyogar</td>
+                <td>Paulo Coelho</td>
+                <td>2025-03-12</td>
+                <td style="text-align: center;"><i class="fa-solid fa-right-from-bracket"></i></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Sariq devni minib</td>
+                <td>Xudoyberdi To‘xtaboyev</td>
+                <td>2025-09-15</td>
+                <td style="text-align: center;"><i class="fa-solid fa-right-from-bracket"></i></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>O‘tkan kunlar</td>
+                <td>Abdulla Qodiriy</td>
+                <td>2025-04-20</td>
+                <td style="text-align: center;"><i class="fa-solid fa-right-from-bracket"></i></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Kecha va kunduz</td>
+                <td>Cho‘lpon</td>
+                <td>2025-01-08</td>
+                <td style="text-align: center;"><i class="fa-solid fa-right-from-bracket"></i></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Boburnoma</td>
+                <td>Zahiriddin Muhammad Bobur</td>
+                <td>2025-02-17</td>
+                <td style="text-align: center;"><i class="fa-solid fa-right-from-bracket"></i></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Jinlar bazmi</td>
+                <td>Ulug‘bek Hamdam</td>
+                <td>2025-05-09</td>
+                <td style="text-align: center;"><i class="fa-solid fa-right-from-bracket"></i></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Hayot</td>
+                <td>Ernest Heminguey</td>
+                <td>2025-03-28</td>
+                <td style="text-align: center;"><i class="fa-solid fa-right-from-bracket"></i></td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Qorqma</td>
+                <td>Elchin Safarli</td>
+                <td>2025-06-05</td>
+                <td style="text-align: center;"><i class="fa-solid fa-right-from-bracket"></i></td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Ikki eshik orasi</td>
+                <td>O‘tkirova Saida</td>
+                <td>2025-07-02</td>
+                <td style="text-align: center;"><i class="fa-solid fa-right-from-bracket"></i></td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Shum bola</td>
+                <td>G‘afur G‘ulom</td>
+                <td>2025-01-29</td>
+                <td style="text-align: center;"><i class="fa-solid fa-right-from-bracket"></i></td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Qasos</td>
+                <td>Fyodor Dostoyevskiy</td>
+                <td>2025-02-11</td>
+                <td style="text-align: center;"><i class="fa-solid fa-right-from-bracket"></i></td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Boy ota, kambag‘al ota</td>
+                <td>Robert Kiyosaki</td>
+                <td>2025-03-15</td>
+                <td style="text-align: center;"><i class="fa-solid fa-right-from-bracket"></i></td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>Atom odatlar</td>
+                <td>James Clear</td>
+                <td>2025-03-18</td>
+                <td style="text-align: center;"><i class="fa-solid fa-right-from-bracket"></i></td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>Ufq</td>
+                <td>Ulug‘bek Hamdam</td>
+                <td>2025-04-11</td>
+                <td style="text-align: center;"><i class="fa-solid fa-right-from-bracket"></i></td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>Yulduzli tunlar</td>
+                <td>Pirimqul Qodirov</td>
+                <td>2025-05-10</td>
+                <td style="text-align: center;"><i class="fa-solid fa-right-from-bracket"></i></td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>Jinoyat va jazo</td>
+                <td>Fyodor Dostoyevskiy</td>
+                <td>2025-05-28</td>
+                <td style="text-align: center;"><i class="fa-solid fa-right-from-bracket"></i></td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>Mehrobdan chayon</td>
+                <td>Abdulla Qodiriy</td>
+                <td>2025-06-14</td>
+                <td style="text-align: center;"><i class="fa-solid fa-right-from-bracket"></i></td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>Dunyoning ishlari</td>
+                <td>O‘tkir Hoshimov</td>
+                <td>2025-07-30</td>
+                <td style="text-align: center;"><i class="fa-solid fa-right-from-bracket"></i></td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>Asrga tatigulik kun</td>
+                <td>Chingiz Aytmatov</td>
+                <td>2025-08-22</td>
+                <td style="text-align: center;"><i class="fa-solid fa-right-from-bracket"></i></td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>1984</td>
+                <td>George Orwell</td>
+                <td>2025-09-10</td>
+                <td style="text-align: center;"><i class="fa-solid fa-right-from-bracket"></i></td>
+              </tr>
+              
+            </tbody>
+          </table>
+          <button id="showMoreBtn">Yana ko‘rsatish</button>
+
+
+        </section>
+        
+      <!-- <div><img src="../IMG/profilbg.png" alt=""></div> -->
+      <!-- <i class="fa-solid fa-circle-exclamation" style="font-size: 50px; color: #999; margin-bottom: 15px;"></i> -->
+      <!-- <h2 style="font-size: 26px; margin-bottom: 8px;">No Data Found</h2> -->
+      <!-- <p style="font-size: 16px; color: #888;">There are currently no items to display.</p> -->
+    </section>
+    
+          
+  </main>
+  <!-- Footer -->
+  <footer style="padding-left: 55px;" class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <i class="fa-solid fa-book"></i>
+        <h3>MyBooK AI</h3>
+      </div>
+      <p>AI yordamida kitoblarni o‘qing, tahlil qiling va o‘rganing.</p>
+      <div class="footer-socials">
+        <i class="fa-brands fa-telegram"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-github"></i>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 MyBooK AI. Barcha huquqlar himoyalangan.</p>
+    </div>
+  </footer>
+
+  <script src="../JS/books.js"></script>
+  <script src="../JS/profil.js"></script>
+  
+</body>
+</html>

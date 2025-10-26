@@ -1,0 +1,178 @@
+:root {
+    --bg-color: #d5d5d5;
+    --bg-color1: hsla(0, 0%, 100%, 0.364);
+    --text-color: #181818;
+    --navbar-bg: #fff;
+    --navbar-text: #181818;
+  }
+  
+  /* 🔹 DARK MODE */
+  .dark-mode {
+    --bg-color: #121212;
+    --bg-color1: #0000005d;
+    --text-color: #f5f5f5;
+    --navbar-bg: #181818;
+    --navbar-text: #f5f5f5;
+  }
+.no_Data {
+    justify-content: start;
+    outline: hidden;
+    background-image: url('../IMG/lightbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: start;
+    height: auto;
+    gap: 50px;
+  }
+  
+  /* Dark rejim uchun */
+  body.dark-mode .no_Data {
+    background-image: url('../IMG/profilbg.jpg');
+  }
+  .profil_item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #888;
+    padding: 10px 30px;
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    position: relative;
+    height: auto;
+    box-shadow: 5px 5px 8px black;
+  }
+  .user_abaut b{
+    margin-left: 200px;
+    color: var(--text-color);
+    text-align: start;
+    background-color: var(--bg-color1 );
+    padding: 5px 9px;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  .user_abaut b:hover {
+    opacity: 0.7;
+  }
+  .user_abaut {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .user_img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 100%;
+    position: absolute;
+    top: -40%;
+    border: var(--bg-color) outset 5px;
+    box-shadow: 2px 2px 10px black;
+  }
+  .profil_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 20px; */
+  }
+  .profil_button button {
+    color: var(--text-color);
+    background-color: var(--bg-color1 );
+    padding: 5px 9px;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+  .profil_button button:hover {
+    opacity: 0.9;
+  }
+  .profil_button button:active {
+    opacity: 0.7;
+  }
+
+  #showMoreBtn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 8px 18px;
+    border-radius: 12px;
+    border: none;
+    background: var(--bg-color1);
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+  }
+  
+  #showMoreBtn:hover {
+    background: #444;
+  }
+
+  .purchased_books {
+    color: var(--text-color);
+    background-color: #888888b8;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 40px;
+  }
+  
+  .purchased_books h2 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 3px var(--navbar-text);
+
+  }
+  .books_table tr td:first-child {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .books_table {
+    width: 100%;
+    text-align: left;
+    color: var(--text-color);
+    border-collapse: separate; /* default bo‘lgan collapse ni o‘chiradi */
+    border-spacing: 8px; /* hujayralar orasidagi masofa */
+  }
+  
+  .books_table th, .books_table td {
+    color: var(--text-color);
+    text-align: start;
+    background-color: var(--bg-color1 );
+    padding: 5px 9px;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  .books_table th {
+  
+  }
+  
+  .books_table tr:hover {
+
+  }
+  
+  .status {
+  
+  }
+  
+  .status.active {
+   
+  }
+  
+  .status.expired {
+
+  }
+/* .title_table th {
+   margin: 0 10px;
+    
+} */

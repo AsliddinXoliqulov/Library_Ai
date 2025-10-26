@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-labelledby="logoTitle logoDesc"
+     style="--logo-primary:#111827;--logo-accent:#6EE7B7;--logo-muted:#9CA3AF;">
+  <title id="logoTitle">KitobAI logo</title>
+  <desc id="logoDesc">Modern open-book icon with a spark representing AI — colors use CSS variables for theme support.</desc>
+
+  <!-- Background rounded square (subtle) -->
+  <rect x="6" y="6" width="108" height="108" rx="18" fill="none"/>
+
+  <!-- Book base: left and right pages -->
+  <g transform="translate(10,12)">
+    <!-- left page shadow -->
+    <path d="M10 80 C5 78, 5 20, 10 18 L48 18 C52 18, 52 82, 48 82 Z"
+          fill="var(--logo-primary)" opacity="0.06"/>
+    <!-- right page shadow -->
+    <path d="M62 18 L98 18 C103 20, 103 78, 98 80 L62 80 C58 80, 58 18, 62 18 Z"
+          fill="var(--logo-primary)" opacity="0.04"/>
+
+    <!-- left page -->
+    <path d="M8 16 C14 14, 34 12, 42 16 L42 80 C34 76, 14 74, 8 72 Z"
+          fill="white" stroke="var(--logo-primary)" stroke-width="2" stroke-linejoin="round"/>
+    <!-- right page -->
+    <path d="M50 16 C58 12, 78 14, 84 16 L84 72 C78 74, 58 76, 50 80 Z"
+          fill="white" stroke="var(--logo-primary)" stroke-width="2" stroke-linejoin="round"/>
+
+    <!-- page crease (center) -->
+    <path d="M46 18 L50 80" stroke="var(--logo-muted)" stroke-width="1.2" stroke-linecap="round" opacity="0.9"/>
+
+    <!-- page lines on left page -->
+    <g stroke="var(--logo-muted)" stroke-width="1.2" stroke-linecap="round" opacity="0.95" transform="translate(14,32)">
+      <path d="M0 0 H18" />
+      <path d="M0 8 H20" />
+      <path d="M0 16 H15" />
+    </g>
+
+    <!-- page lines on right page -->
+    <g stroke="var(--logo-muted)" stroke-width="1.2" stroke-linecap="round" opacity="0.95" transform="translate(64,32)">
+      <path d="M0 0 H18" />
+      <path d="M0 8 H20" />
+      <path d="M0 16 H15" />
+    </g>
+
+    <!-- top accent (AI spark / light) -->
+    <g transform="translate(46,-6)">
+      <circle cx="12" cy="12" r="6" fill="var(--logo-accent)" />
+      <!-- spark rays -->
+      <path d="M12 2 L12 0" stroke="var(--logo-accent)" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M12 22 L12 24" stroke="var(--logo-accent)" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M2 12 L0 12" stroke="var(--logo-accent)" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M22 12 L24 12" stroke="var(--logo-accent)" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M5 5 L3 3" stroke="var(--logo-accent)" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M19 19 L21 21" stroke="var(--logo-accent)" stroke-width="1.6" stroke-linecap="round"/>
+      <!-- small AI dot -->
+      <circle cx="12" cy="12" r="2.2" fill="white" opacity="0.95"/>
+    </g>
+  </g>
+</svg>

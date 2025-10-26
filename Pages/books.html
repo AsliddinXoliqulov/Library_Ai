@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/books.css">
+  <title>MyBooK - Books</title>
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loading-screen">
+    <div class="loader-wrapper">
+      <!-- <span class="loader-letter">M</span>
+      <span class="loader-letter">y</span>
+      <span class="loader-letter">B</span>
+      <span class="loader-letter">o</span>
+      <span class="loader-letter">o</span>
+      <span class="loader-letter">k</span> -->
+      <div class="loader"></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+        <!-- <div>.</div> -->
+      <i class="fa-solid fa-book fa-2xl"></i>
+      <h2><a href="/">MyBooK</a></h2>
+      <!-- <Button id="saidbar_menu"><i class="fa-solid fa-bars"></i></Button> -->
+    </div>
+    <div class="navbar-right">
+      <i id="toggle-btn" class="fa-solid fa-sun theme-icon"></i>
+      <!-- <i id="menu-btn" class="fa-solid fa-bars menu-icon"></i> -->
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+  <aside class="sidebar collapsed">
+    <ul>
+        <div style="display: none;" class="logo2">
+            <i class="fa-solid fa-book fa-2xl"></i>
+            <h2>MyBooK</h2>
+          </div>
+      <li class="links_bar""><i class="fa-solid fa-book-open"></i><span><a href="./books.html">Adabiyotlar</a></span></li>
+      <li class="links_bar""><i class="fa-solid fa-scroll"></i><span><a href="./asarlar.html">Asarlar</a></span></li>
+      <li class="links_bar""><i class="fa-solid fa-feather-pointed"></i><span><a href="./maqolalr.html">Maqolalar</a></span></li>
+      <li class="links_bar""><i class="fa-solid fa-star"></i><span><a href="./ertaklar.html">Ertaklar</a></span></li>
+      <li class="links_bar""><i class="fa-solid fa-heart"></i><span><a href="./saralanganlar.html">Saralangan</a></span></li>
+      <li class="links_bar""><i class="fa-solid fa-user"></i><span><a href="./prodil.html">Profil</a></span></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="books-main">
+    <div class="search_imput">
+        <h1>Adabiyotlar</h1>
+        <input type="text" placeholder="Search books..." id="book-search">
+    </div>
+
+    <div class="books-grid">
+        <div class="books-grid" id="books-grid">
+          
+  </main>
+  <!-- Footer -->
+  <footer style="padding-left: 55px;" class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <i class="fa-solid fa-book"></i>
+        <h3>MyBooK AI</h3>
+      </div>
+      <p>AI yordamida kitoblarni o‘qing, tahlil qiling va o‘rganing.</p>
+      <div class="footer-socials">
+        <i class="fa-brands fa-telegram"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-github"></i>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 MyBooK AI. Barcha huquqlar himoyalangan.</p>
+    </div>
+  </footer>
+
+  <script src="../JS/books.js"></script>
+</body>
+</html>
